@@ -1,72 +1,64 @@
-<svg width="720" height="348" viewBox="0 0 720 348" xmlns="http://www.w3.org/2000/svg">
+<svg width="640" height="370" viewBox="0 0 640 370" xmlns="http://www.w3.org/2000/svg">
   <style>
-    text { font-family: Menlo, Monaco, 'Courier New', monospace; }
-    .bg    { fill: #0D1117; }
-    .bar   { fill: #161B22; }
-    .sep   { fill: #30363D; }
-    .bord  { fill: none; stroke: #30363D; stroke-width: 1; }
-    .main  { fill: #E6EDF3; }
-    .muted { fill: #8B949E; }
-    .blue  { fill: #58A6FF; }
-    .green { fill: #3FB950; }
+    text { font-family: Menlo, Monaco, 'Courier New', monospace; font-size: 13px; }
+    .bg      { fill: #0D1117; }
+    .box-bg  { fill: #161B22; }
+    .bord    { fill: none; stroke: #30363D; stroke-width: 1; }
+    .main    { fill: #E6EDF3; }
+    .muted   { fill: #8B949E; }
+    .blue    { fill: #58A6FF; }
+    .green   { fill: #3FB950; }
+    .amber   { fill: #D29922; }
+    .dim     { fill: #6E7681; }
     @media (prefers-color-scheme: light) {
-      .bg    { fill: #FFFFFF; }
-      .bar   { fill: #F6F8FA; }
-      .sep   { fill: #D0D7DE; }
-      .bord  { fill: none; stroke: #D0D7DE; stroke-width: 1; }
-      .main  { fill: #1F2328; }
-      .muted { fill: #656D76; }
-      .blue  { fill: #0969DA; }
-      .green { fill: #1A7F37; }
+      .bg      { fill: #FFFFFF; }
+      .box-bg  { fill: #F6F8FA; }
+      .bord    { fill: none; stroke: #D0D7DE; stroke-width: 1; }
+      .main    { fill: #1F2328; }
+      .muted   { fill: #656D76; }
+      .blue    { fill: #0969DA; }
+      .green   { fill: #1A7F37; }
+      .amber   { fill: #9A6700; }
+      .dim     { fill: #848D97; }
     }
   </style>
 
   <!-- Window -->
-  <rect width="720" height="348" rx="10" class="bg"/>
-  <rect x="0.5" y="0.5" width="719" height="347" rx="9.5" class="bord"/>
+  <rect width="640" height="370" rx="10" class="bg"/>
+  <rect x="0.5" y="0.5" width="639" height="369" rx="9.5" class="bord"/>
 
-  <!-- Title bar -->
-  <rect width="720" height="38" rx="10" class="bar"/>
-  <rect y="28" width="720" height="10" class="bar"/>
-  <rect y="37" width="720" height="1" class="sep"/>
+  <!-- Agent name box -->
+  <rect x="20" y="14" width="155" height="32" rx="6" class="box-bg"/>
+  <rect x="20.5" y="14.5" width="154" height="31" rx="5.5" class="bord"/>
+  <text y="35"><tspan x="34" class="amber">&#x2735;  </tspan><tspan font-weight="bold" class="main">yashwanth</tspan></text>
 
-  <!-- Traffic lights -->
-  <circle cx="22" cy="19" r="6" fill="#FF5F57"/>
-  <circle cx="42" cy="19" r="6" fill="#FFBD2E"/>
-  <circle cx="62" cy="19" r="6" fill="#28CA41"/>
+  <!-- > who are you? -->
+  <text y="65"><tspan x="20" class="dim">&#x276F;  </tspan><tspan class="main">who are you?</tspan></text>
 
-  <!-- Title bar text -->
-  <text x="360" y="24" font-size="12" class="muted" text-anchor="middle">katipally -- zsh</text>
+  <text x="20" y="87" font-size="14" font-weight="bold" class="main">Yashwanth Reddy Katipally</text>
+  <text x="20" y="105" class="muted">AI/ML Engineer  &#xB7;  San Jose, CA</text>
 
-  <!-- whoami -->
-  <text x="20" y="64" font-size="14" class="blue">❯</text>
-  <text x="38" y="64" font-size="14" class="main"> whoami</text>
-  <text x="20" y="84" font-size="14" class="green">Yashwanth Reddy Katipally</text>
-  <text x="20" y="101" font-size="12" class="muted">AI/ML Engineer  ·  San Jose, CA</text>
+  <text x="20" y="125" class="main">Recent grad from SJSU, Applied Data Intelligence.</text>
+  <text x="20" y="143" class="main">I find what should exist but doesn't, then build it.</text>
+  <text x="20" y="161" class="main">Ship fast, read the logs, don't push to main on Fridays.</text>
+  <text x="20" y="179" class="muted">I pushed. Once.</text>
 
-  <!-- cat about.txt -->
-  <text x="20" y="125" font-size="14" class="blue">❯</text>
-  <text x="38" y="125" font-size="14" class="main"> cat about.txt</text>
-  <text x="20" y="145" font-size="13" class="main">Recent grad from SJSU, Applied Data Intelligence.</text>
-  <text x="20" y="163" font-size="13" class="main">I find what should exist but doesn't, then build it.</text>
-  <text x="20" y="181" font-size="13" class="main">Ship fast, read the logs, don't push to main on Fridays. I pushed. Once.</text>
+  <!-- tool: check_status() -->
+  <text y="201"><tspan x="20" class="amber">&#x25CF;  </tspan><tspan class="blue">check_status</tspan><tspan class="muted">()</tspan></text>
+  <text y="219"><tspan x="36" class="dim">&#x2514;  </tspan><tspan class="green">OPEN_TO_WORK=true</tspan><tspan class="dim">  # full-time AI/ML roles</tspan></text>
 
-  <!-- echo $OPEN_TO_WORK -->
-  <text x="20" y="205" font-size="14" class="blue">❯</text>
-  <text x="38" y="205" font-size="14" class="main"> echo $OPEN_TO_WORK</text>
-  <text x="20" y="225" font-size="14" class="green">true</text>
-  <text x="64" y="225" font-size="12" class="muted">  # full-time roles in AI/ML Engineering</text>
+  <!-- > contact? -->
+  <text y="245"><tspan x="20" class="dim">&#x276F;  </tspan><tspan class="main">contact?</tspan></text>
 
-  <!-- cat contact.txt -->
-  <text x="20" y="249" font-size="14" class="blue">❯</text>
-  <text x="38" y="249" font-size="14" class="main"> cat contact.txt</text>
-  <text x="20" y="269" font-size="13"><tspan class="muted">  email     </tspan><tspan class="blue">yashwanthreddykatipally@gmail.com</tspan></text>
-  <text x="20" y="286" font-size="13"><tspan class="muted">  linkedin  </tspan><tspan class="blue">yashwanth-katipally</tspan></text>
-  <text x="20" y="303" font-size="13"><tspan class="muted">  web       </tspan><tspan class="blue">yashwanth.net</tspan></text>
+  <!-- tool: get_contact() -->
+  <text y="265"><tspan x="20" class="amber">&#x25CF;  </tspan><tspan class="blue">get_contact</tspan><tspan class="muted">()</tspan></text>
+  <text y="283"><tspan x="36" class="dim">&#x2514;  </tspan><tspan class="muted">email     </tspan><tspan class="blue">yashwanthreddykatipally@gmail.com</tspan></text>
+  <text y="300"><tspan x="36" class="dim">   </tspan><tspan class="muted">linkedin  </tspan><tspan class="blue">yashwanth-katipally</tspan></text>
+  <text y="317"><tspan x="36" class="dim">   </tspan><tspan class="muted">web       </tspan><tspan class="blue">yashwanth.net</tspan></text>
 
-  <!-- Final prompt + blinking cursor -->
-  <text x="20" y="327" font-size="14" class="blue">❯</text>
-  <rect x="38" y="313" width="9" height="16" rx="1" fill="#58A6FF" class="blue">
+  <!-- final prompt + blinking cursor -->
+  <text y="343"><tspan x="20" class="dim">&#x276F;</tspan></text>
+  <rect x="36" y="329" width="9" height="16" rx="1" fill="#58A6FF" class="blue">
     <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/>
   </rect>
 </svg>
