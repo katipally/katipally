@@ -1,0 +1,41 @@
+<svg width="720" height="300" viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Window background -->
+  <rect width="720" height="300" rx="10" fill="#1E1E2E"/>
+
+  <!-- Title bar -->
+  <rect width="720" height="38" rx="10" fill="#181825"/>
+  <rect y="28" width="720" height="10" fill="#181825"/>
+
+  <!-- Traffic lights -->
+  <circle cx="22" cy="19" r="6" fill="#FF5F57"/>
+  <circle cx="42" cy="19" r="6" fill="#FFBD2E"/>
+  <circle cx="62" cy="19" r="6" fill="#28CA41"/>
+
+  <!-- Title -->
+  <text x="360" y="24" font-family="Menlo,Monaco,'Courier New',monospace" font-size="12" fill="#585B70" text-anchor="middle">katipally — zsh</text>
+
+  <!-- whoami -->
+  <text x="20" y="66" font-family="Menlo,Monaco,'Courier New',monospace" font-size="14" fill="#89DCEB">❯</text>
+  <text x="38" y="66" font-family="Menlo,Monaco,'Courier New',monospace" font-size="14" fill="#CDD6F4"> whoami</text>
+  <text x="20" y="88" font-family="Menlo,Monaco,'Courier New',monospace" font-size="14" fill="#A6E3A1">Yashwanth Reddy Katipally</text>
+  <text x="20" y="106" font-family="Menlo,Monaco,'Courier New',monospace" font-size="12" fill="#6C7086">AI/ML Engineer  ·  San Jose, CA</text>
+
+  <!-- cat about.txt -->
+  <text x="20" y="132" font-family="Menlo,Monaco,'Courier New',monospace" font-size="14" fill="#89DCEB">❯</text>
+  <text x="38" y="132" font-family="Menlo,Monaco,'Courier New',monospace" font-size="14" fill="#CDD6F4"> cat about.txt</text>
+  <text x="20" y="154" font-family="Menlo,Monaco,'Courier New',monospace" font-size="13" fill="#CDD6F4">MS Applied Data Intelligence, SJSU — graduating May 2026.</text>
+  <text x="20" y="172" font-family="Menlo,Monaco,'Courier New',monospace" font-size="13" fill="#CDD6F4">Actively looking for full-time AI/ML engineering roles.</text>
+  <text x="20" y="190" font-family="Menlo,Monaco,'Courier New',monospace" font-size="13" fill="#CDD6F4">I find gaps and close them. Fast by default, measured by habit.</text>
+
+  <!-- echo $OPEN_TO_WORK -->
+  <text x="20" y="218" font-family="Menlo,Monaco,'Courier New',monospace" font-size="14" fill="#89DCEB">❯</text>
+  <text x="38" y="218" font-family="Menlo,Monaco,'Courier New',monospace" font-size="14" fill="#CDD6F4"> echo $OPEN_TO_WORK</text>
+  <text x="20" y="240" font-family="Menlo,Monaco,'Courier New',monospace" font-size="14" fill="#A6E3A1">true</text>
+  <text x="66" y="240" font-family="Menlo,Monaco,'Courier New',monospace" font-size="12" fill="#6C7086">  # full-time · AI/ML Engineer · starting ASAP</text>
+
+  <!-- Next prompt + blinking cursor -->
+  <text x="20" y="272" font-family="Menlo,Monaco,'Courier New',monospace" font-size="14" fill="#89DCEB">❯</text>
+  <rect x="38" y="258" width="9" height="16" fill="#89DCEB" rx="1">
+    <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
+</svg>
