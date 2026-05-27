@@ -1,77 +1,101 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Yashwanth%20Reddy&fontSize=52&fontColor=fff&animation=twinkling&fontAlignY=38" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=shark&color=gradient&customColorList=6,11,20&height=140&section=header" width="100%" />
+
+  <h2>Yashwanth Reddy Katipally</h2>
 
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=19&pause=1200&color=7E3ACE&center=true&vCenter=true&width=650&lines=building+AI+agents%2C+Swift+apps%2C+and+whatever+the+problem+requires;yes%2C+all+three%3A+AI+%C2%B7+full-stack+%C2%B7+native+Apple;I+built+a+rubber+duck.+It+reviews+your+code." alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=17&pause=1500&color=22D3EE&center=true&vCenter=true&width=580&lines=AI+%2F+ML+Engineer;find+the+gap+%E2%86%92+build+the+fix+%E2%86%92+ship+it;LangGraph+%C2%B7+RAG+%C2%B7+LLMs+%C2%B7+full-stack;MS+%40+SJSU+%E2%80%94+graduating+May+2026;open+to+full-time+roles" alt="Typing SVG" />
   </a>
+
+  <br/><br/>
+
+  <img src="https://img.shields.io/badge/%F0%9F%9F%A2%20available%20for%20full--time%20roles-22D3EE?style=flat-square&labelColor=0D1117&color=22D3EE&logoColor=000000" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/AI%20%2F%20ML%20Engineer-0D1117?style=flat-square&color=0D1117&labelColor=22D3EE&logoColor=0D1117" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/San%20Jose%2C%20CA-0D1117?style=flat-square&logo=googlemaps&logoColor=22D3EE&color=0D1117" />
 </div>
+
+<br/>
 
 ---
 
 ## About
 
-```js
-const me = {
-  location:  "San Jose, CA",
-  focus:     ["AI/ML", "full-stack", "native Apple"], // I was told to pick one
-  currently: "turning LLM outputs into actual products",
-  fun_fact:  "built a rubber duck that roasts your code — ElevenLabs voice included"
-}
-```
+MS in Applied Data Intelligence (SJSU, May 2026) — graduating this month. Actively looking for full-time AI/ML engineering roles.
 
-I build across AI, full-stack, and native Apple. From training multilingual abuse-detection models to shipping a JARVIS that lives in your Mac's notch — I go where the problem is, not where the hype cycle points.
+My process: find what's slow, manual, or missing → build the thing that fixes it → ship it, measure it, iterate. I don't wait for a perfect spec. If I notice a gap, I close it. If a system is underperforming, I don't assume the architecture is right — I question it, redesign it, and validate the improvement with actual numbers.
+
+I move fast to get to a real answer, then I measure to make sure it's the right one. Comfortable owning problems end-to-end — agent design, LLM fine-tuning, retrieval pipelines, production APIs, and the infrastructure holding it together. The goal is always the same: make the AI actually useful.
+
+I learn fast. New frameworks, new tooling, new paradigms — I pick them up by building with them, not by reading about them.
+
+---
+
+## How I work
+
+<table>
+<tr>
+<td valign="top" width="33%">
+
+**🔍 Find the gap**
+
+Slow processes, missing tools, repeated manual work. If it takes a person 30 minutes to do something a machine could do in 5, that's a gap. I look for these first, then decide if closing the gap is worth it.
+
+</td>
+<td valign="top" width="33%">
+
+**⚙️ Build the fix**
+
+Prototype fast. Validate the idea works before making it clean. No overengineering until there's something real to optimize — a working ugly solution beats a beautiful plan.
+
+</td>
+<td valign="top" width="33%">
+
+**📐 Measure it**
+
+`recall@5: 0.72 → 0.89`  
+`20–30 min → <5 min`  
+`p95 latency <1.2s`
+
+If it can't be measured, it didn't improve. Real numbers only.
+
+</td>
+</tr>
+</table>
 
 ---
 
 ## Stack
 
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=python,ts,swift,react,cloudflare,postgres,git&theme=dark" />
-</div>
-
-&nbsp;
-
-Python · TypeScript · Swift · PyTorch · HuggingFace · LangChain · React · Cloudflare Workers · SwiftUI · Supabase
+**AI · Agents** &nbsp;—&nbsp; LangGraph · LangChain · DSPy · MCP · CrewAI · OpenAI · Anthropic  
+**LLMs** &nbsp;—&nbsp; PyTorch · HuggingFace · QLoRA · PEFT · vLLM · TensorRT-LLM · Unsloth · W&B  
+**Retrieval** &nbsp;—&nbsp; pgvector · FAISS · BM25 · LlamaIndex · GraphRAG · hybrid search  
+**Full-Stack** &nbsp;—&nbsp; Python · TypeScript · FastAPI · React · PostgreSQL · Redis  
+**Infrastructure** &nbsp;—&nbsp; Docker · AWS · Kubernetes · CI/CD · Terraform  
 
 ---
 
-## Projects
+## Currently
 
-| Project | What it does | Tech |
-|---------|-------------|------|
-| [rubber-duck](https://github.com/katipally/rubber-duck) | Code review tool. AI reads your code, ElevenLabs voice delivers the verdict. | TypeScript · Cloudflare Workers AI |
-| [J.A.R.V.I.S](https://github.com/katipally/J.A.R.V.I.S) | Privacy-first AI assistant. Lives in your Mac's notch. | Swift · SwiftUI · macOS |
-| [Doom-Coder](https://github.com/katipally/Doom-Coder) | Monitors AI agent lifecycle. Notifies you so you can doom scroll in peace. | Swift · macOS |
-| [LocalSiri](https://github.com/katipally/LocalSiri) | On-device AI assistant. No cloud. Your data stays yours. | Swift · on-device LLM |
-| [Multilingual Abuse Detection](https://github.com/katipally/Multimodal-Multilingual-Abuse-Detection-for-Memes) | Detects toxic content across 12+ languages and image modalities. | Python · PyTorch · HuggingFace |
-
----
-
-## Stats
+Graduating May 2026. Looking for full-time roles in **AI/ML Engineering**, **Software Engineering**, or **Research Engineering**.
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=katipally&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" height="160" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=katipally&layout=compact&theme=tokyonight&hide_border=true&langs_count=5" height="160" />
-</div>
-
-<div align="center">
-  <img src="https://streak-stats.demolab.com?user=katipally&theme=tokyonight&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" />
-</div>
-
----
-
-## Connect
-
-<div align="center">
-  <a href="https://linkedin.com/in/YOUR_LINKEDIN_HERE">
+  <a href="mailto:yashwanthreddykatipally@gmail.com">
+    <img src="https://img.shields.io/badge/yashwanthreddykatipally%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+  &nbsp;
+  <a href="https://linkedin.com/in/yashwanth-katipally">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
   &nbsp;
-  <a href="mailto:YOUR_EMAIL_HERE">
-    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
+  <a href="https://yashwanth.net">
+    <img src="https://img.shields.io/badge/yashwanth.net-0D1117?style=for-the-badge&logo=safari&logoColor=22D3EE" />
   </a>
 </div>
 
+<br/>
+
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=shark&color=gradient&customColorList=6,11,20&height=100&section=footer&reversal=true" width="100%" />
 </div>
