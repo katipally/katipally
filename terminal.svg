@@ -1,41 +1,72 @@
-<svg width="720" height="300" viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg">
-  <!-- Window background -->
-  <rect width="720" height="300" rx="10" fill="#1E1E2E"/>
+<svg width="720" height="348" viewBox="0 0 720 348" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    text { font-family: Menlo, Monaco, 'Courier New', monospace; }
+    .bg    { fill: #0D1117; }
+    .bar   { fill: #161B22; }
+    .sep   { fill: #30363D; }
+    .bord  { fill: none; stroke: #30363D; stroke-width: 1; }
+    .main  { fill: #E6EDF3; }
+    .muted { fill: #8B949E; }
+    .blue  { fill: #58A6FF; }
+    .green { fill: #3FB950; }
+    @media (prefers-color-scheme: light) {
+      .bg    { fill: #FFFFFF; }
+      .bar   { fill: #F6F8FA; }
+      .sep   { fill: #D0D7DE; }
+      .bord  { fill: none; stroke: #D0D7DE; stroke-width: 1; }
+      .main  { fill: #1F2328; }
+      .muted { fill: #656D76; }
+      .blue  { fill: #0969DA; }
+      .green { fill: #1A7F37; }
+    }
+  </style>
+
+  <!-- Window -->
+  <rect width="720" height="348" rx="10" class="bg"/>
+  <rect x="0.5" y="0.5" width="719" height="347" rx="9.5" class="bord"/>
 
   <!-- Title bar -->
-  <rect width="720" height="38" rx="10" fill="#181825"/>
-  <rect y="28" width="720" height="10" fill="#181825"/>
+  <rect width="720" height="38" rx="10" class="bar"/>
+  <rect y="28" width="720" height="10" class="bar"/>
+  <rect y="37" width="720" height="1" class="sep"/>
 
   <!-- Traffic lights -->
   <circle cx="22" cy="19" r="6" fill="#FF5F57"/>
   <circle cx="42" cy="19" r="6" fill="#FFBD2E"/>
   <circle cx="62" cy="19" r="6" fill="#28CA41"/>
 
-  <!-- Title -->
-  <text x="360" y="24" font-family="Menlo,Monaco,'Courier New',monospace" font-size="12" fill="#585B70" text-anchor="middle">katipally — zsh</text>
+  <!-- Title bar text -->
+  <text x="360" y="24" font-size="12" class="muted" text-anchor="middle">katipally -- zsh</text>
 
   <!-- whoami -->
-  <text x="20" y="66" font-family="Menlo,Monaco,'Courier New',monospace" font-size="14" fill="#89DCEB">❯</text>
-  <text x="38" y="66" font-family="Menlo,Monaco,'Courier New',monospace" font-size="14" fill="#CDD6F4"> whoami</text>
-  <text x="20" y="88" font-family="Menlo,Monaco,'Courier New',monospace" font-size="14" fill="#A6E3A1">Yashwanth Reddy Katipally</text>
-  <text x="20" y="106" font-family="Menlo,Monaco,'Courier New',monospace" font-size="12" fill="#6C7086">AI/ML Engineer  ·  San Jose, CA</text>
+  <text x="20" y="64" font-size="14" class="blue">❯</text>
+  <text x="38" y="64" font-size="14" class="main"> whoami</text>
+  <text x="20" y="84" font-size="14" class="green">Yashwanth Reddy Katipally</text>
+  <text x="20" y="101" font-size="12" class="muted">AI/ML Engineer  ·  San Jose, CA</text>
 
   <!-- cat about.txt -->
-  <text x="20" y="132" font-family="Menlo,Monaco,'Courier New',monospace" font-size="14" fill="#89DCEB">❯</text>
-  <text x="38" y="132" font-family="Menlo,Monaco,'Courier New',monospace" font-size="14" fill="#CDD6F4"> cat about.txt</text>
-  <text x="20" y="154" font-family="Menlo,Monaco,'Courier New',monospace" font-size="13" fill="#CDD6F4">MS Applied Data Intelligence, SJSU — graduating May 2026.</text>
-  <text x="20" y="172" font-family="Menlo,Monaco,'Courier New',monospace" font-size="13" fill="#CDD6F4">Actively looking for full-time AI/ML engineering roles.</text>
-  <text x="20" y="190" font-family="Menlo,Monaco,'Courier New',monospace" font-size="13" fill="#CDD6F4">I find gaps and close them. Fast by default, measured by habit.</text>
+  <text x="20" y="125" font-size="14" class="blue">❯</text>
+  <text x="38" y="125" font-size="14" class="main"> cat about.txt</text>
+  <text x="20" y="145" font-size="13" class="main">Recent grad from SJSU, Applied Data Intelligence.</text>
+  <text x="20" y="163" font-size="13" class="main">I find what should exist but doesn't, then build it.</text>
+  <text x="20" y="181" font-size="13" class="main">Ship fast, read the logs, don't push to main on Fridays. I pushed. Once.</text>
 
   <!-- echo $OPEN_TO_WORK -->
-  <text x="20" y="218" font-family="Menlo,Monaco,'Courier New',monospace" font-size="14" fill="#89DCEB">❯</text>
-  <text x="38" y="218" font-family="Menlo,Monaco,'Courier New',monospace" font-size="14" fill="#CDD6F4"> echo $OPEN_TO_WORK</text>
-  <text x="20" y="240" font-family="Menlo,Monaco,'Courier New',monospace" font-size="14" fill="#A6E3A1">true</text>
-  <text x="66" y="240" font-family="Menlo,Monaco,'Courier New',monospace" font-size="12" fill="#6C7086">  # full-time · AI/ML Engineer · starting ASAP</text>
+  <text x="20" y="205" font-size="14" class="blue">❯</text>
+  <text x="38" y="205" font-size="14" class="main"> echo $OPEN_TO_WORK</text>
+  <text x="20" y="225" font-size="14" class="green">true</text>
+  <text x="64" y="225" font-size="12" class="muted">  # full-time roles in AI/ML Engineering</text>
 
-  <!-- Next prompt + blinking cursor -->
-  <text x="20" y="272" font-family="Menlo,Monaco,'Courier New',monospace" font-size="14" fill="#89DCEB">❯</text>
-  <rect x="38" y="258" width="9" height="16" fill="#89DCEB" rx="1">
+  <!-- cat contact.txt -->
+  <text x="20" y="249" font-size="14" class="blue">❯</text>
+  <text x="38" y="249" font-size="14" class="main"> cat contact.txt</text>
+  <text x="20" y="269" font-size="13"><tspan class="muted">  email     </tspan><tspan class="blue">yashwanthreddykatipally@gmail.com</tspan></text>
+  <text x="20" y="286" font-size="13"><tspan class="muted">  linkedin  </tspan><tspan class="blue">yashwanth-katipally</tspan></text>
+  <text x="20" y="303" font-size="13"><tspan class="muted">  web       </tspan><tspan class="blue">yashwanth.net</tspan></text>
+
+  <!-- Final prompt + blinking cursor -->
+  <text x="20" y="327" font-size="14" class="blue">❯</text>
+  <rect x="38" y="313" width="9" height="16" rx="1" fill="#58A6FF" class="blue">
     <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/>
   </rect>
 </svg>

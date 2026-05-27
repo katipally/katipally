@@ -3,10 +3,6 @@
 
   <br/><br/>
 
-  <sub>LangGraph &nbsp;·&nbsp; LangChain &nbsp;·&nbsp; PyTorch &nbsp;·&nbsp; FastAPI &nbsp;·&nbsp; pgvector &nbsp;·&nbsp; TypeScript &nbsp;·&nbsp; Docker &nbsp;·&nbsp; AWS</sub>
-
-  <br/><br/>
-
   <a href="mailto:yashwanthreddykatipally@gmail.com">
     <img src="https://img.shields.io/badge/email-EA4335?style=flat-square&logo=gmail&logoColor=white" />
   </a>
