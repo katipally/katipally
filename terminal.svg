@@ -1,64 +1,171 @@
-<svg width="640" height="370" viewBox="0 0 640 370" xmlns="http://www.w3.org/2000/svg">
+<svg width="720" height="440" viewBox="0 0 720 440" xmlns="http://www.w3.org/2000/svg">
   <style>
-    text { font-family: Menlo, Monaco, 'Courier New', monospace; font-size: 13px; }
-    .bg      { fill: #0D1117; }
-    .box-bg  { fill: #161B22; }
-    .bord    { fill: none; stroke: #30363D; stroke-width: 1; }
-    .main    { fill: #E6EDF3; }
-    .muted   { fill: #8B949E; }
-    .blue    { fill: #58A6FF; }
-    .green   { fill: #3FB950; }
-    .amber   { fill: #D29922; }
-    .dim     { fill: #6E7681; }
+    text { font-family: Menlo, Monaco, 'Courier New', monospace; }
+    .bg       { fill: #0D1117; }
+    .win-bord { fill: none; stroke: #30363D; stroke-width: 1; }
+    .pnl-bord { fill: none; stroke: #D29922; stroke-width: 1.5; }
+    .sep-line { stroke: #30363D; stroke-width: 1; fill: none; }
+    .div-amr  { stroke: #D29922; stroke-width: 1; fill: none; }
+    .main     { fill: #E6EDF3; }
+    .muted    { fill: #8B949E; }
+    .blue     { fill: #58A6FF; }
+    .green    { fill: #3FB950; }
+    .amber    { fill: #D29922; }
+    .dim      { fill: #6E7681; }
+    .mascot   { fill: #45D1DA; }
+    .m-eye    { fill: #C5F5F8; }
     @media (prefers-color-scheme: light) {
-      .bg      { fill: #FFFFFF; }
-      .box-bg  { fill: #F6F8FA; }
-      .bord    { fill: none; stroke: #D0D7DE; stroke-width: 1; }
-      .main    { fill: #1F2328; }
-      .muted   { fill: #656D76; }
-      .blue    { fill: #0969DA; }
-      .green   { fill: #1A7F37; }
-      .amber   { fill: #9A6700; }
-      .dim     { fill: #848D97; }
+      .bg       { fill: #FFFFFF; }
+      .win-bord { fill: none; stroke: #D0D7DE; stroke-width: 1; }
+      .pnl-bord { fill: none; stroke: #9A6700; stroke-width: 1.5; }
+      .sep-line { stroke: #D0D7DE; stroke-width: 1; fill: none; }
+      .div-amr  { stroke: #9A6700; stroke-width: 1; fill: none; }
+      .main     { fill: #1F2328; }
+      .muted    { fill: #656D76; }
+      .blue     { fill: #0969DA; }
+      .green    { fill: #1A7F37; }
+      .amber    { fill: #9A6700; }
+      .dim      { fill: #848D97; }
+      .mascot   { fill: #0E7C86; }
+      .m-eye    { fill: #B0DDE0; }
     }
   </style>
 
-  <!-- Window -->
-  <rect width="640" height="370" rx="10" class="bg"/>
-  <rect x="0.5" y="0.5" width="639" height="369" rx="9.5" class="bord"/>
+  <!-- Window background + border -->
+  <rect width="720" height="440" rx="10" class="bg"/>
+  <rect x="0.5" y="0.5" width="719" height="439" rx="9.5" class="win-bord"/>
 
-  <!-- Agent name box -->
-  <rect x="20" y="14" width="155" height="32" rx="6" class="box-bg"/>
-  <rect x="20.5" y="14.5" width="154" height="31" rx="5.5" class="bord"/>
-  <text y="35"><tspan x="34" class="amber">&#x2735;  </tspan><tspan font-weight="bold" class="main">yashwanth</tspan></text>
+  <!-- Traffic lights -->
+  <circle cx="22" cy="18" r="6" fill="#FF5F57"/>
+  <circle cx="42" cy="18" r="6" fill="#FFBD2E"/>
+  <circle cx="62" cy="18" r="6" fill="#28CA41"/>
 
-  <!-- > who are you? -->
-  <text y="65"><tspan x="20" class="dim">&#x276F;  </tspan><tspan class="main">who are you?</tspan></text>
+  <!-- Dashed panel border -->
+  <rect x="16.5" y="42.5" width="687" height="329" rx="4" class="pnl-bord" stroke-dasharray="6 4"/>
 
-  <text x="20" y="87" font-size="14" font-weight="bold" class="main">Yashwanth Reddy Katipally</text>
-  <text x="20" y="105" class="muted">AI/ML Engineer  &#xB7;  San Jose, CA</text>
+  <!-- Title "cut" — hides part of top dashed edge -->
+  <rect x="22" y="37" width="200" height="11" class="bg"/>
+  <!-- Title embedded in top border -->
+  <text x="26" y="48" font-size="12">
+    <tspan class="amber">---- </tspan><tspan class="main" font-weight="bold">yashwanth</tspan><tspan class="dim"> v1.0</tspan><tspan class="amber"> ----</tspan>
+  </text>
 
-  <text x="20" y="125" class="main">Recent grad from SJSU, Applied Data Intelligence.</text>
-  <text x="20" y="143" class="main">I find what should exist but doesn't, then build it.</text>
-  <text x="20" y="161" class="main">Ship fast, read the logs, don't push to main on Fridays.</text>
-  <text x="20" y="179" class="muted">I pushed. Once.</text>
+  <!-- Left / right panel divider -->
+  <line x1="296" y1="43" x2="296" y2="371" class="div-amr" stroke-dasharray="4 4"/>
 
-  <!-- tool: check_status() -->
-  <text y="201"><tspan x="20" class="amber">&#x25CF;  </tspan><tspan class="blue">check_status</tspan><tspan class="muted">()</tspan></text>
-  <text y="219"><tspan x="36" class="dim">&#x2514;  </tspan><tspan class="green">OPEN_TO_WORK=true</tspan><tspan class="dim">  # full-time AI/ML roles</tspan></text>
+  <!-- ======================================= -->
+  <!-- MASCOT: teal pixel-art robot, 6x11 grid, 7px/pixel -->
+  <!-- origin: translate(135, 65) -->
+  <!-- ======================================= -->
 
-  <!-- > contact? -->
-  <text y="245"><tspan x="20" class="dim">&#x276F;  </tspan><tspan class="main">contact?</tspan></text>
+  <!-- body pixels -->
+  <g transform="translate(135,65)" class="mascot">
+    <!-- row 0: antenna tip (col 3) -->
+    <rect x="21" y="0"  width="7" height="7"/>
+    <!-- row 1: antenna (col 3) -->
+    <rect x="21" y="7"  width="7" height="7"/>
+    <!-- row 2: head top (cols 1-4) -->
+    <rect x="7"  y="14" width="7" height="7"/>
+    <rect x="14" y="14" width="7" height="7"/>
+    <rect x="21" y="14" width="7" height="7"/>
+    <rect x="28" y="14" width="7" height="7"/>
+    <!-- row 3: full head (cols 0-5) -->
+    <rect x="0"  y="21" width="7" height="7"/>
+    <rect x="7"  y="21" width="7" height="7"/>
+    <rect x="14" y="21" width="7" height="7"/>
+    <rect x="21" y="21" width="7" height="7"/>
+    <rect x="28" y="21" width="7" height="7"/>
+    <rect x="35" y="21" width="7" height="7"/>
+    <!-- row 4: eyes row — body at cols 0,5; gap at 2,3 -->
+    <rect x="0"  y="28" width="7" height="7"/>
+    <rect x="35" y="28" width="7" height="7"/>
+    <!-- row 5: lower face (cols 0-5) -->
+    <rect x="0"  y="35" width="7" height="7"/>
+    <rect x="7"  y="35" width="7" height="7"/>
+    <rect x="14" y="35" width="7" height="7"/>
+    <rect x="21" y="35" width="7" height="7"/>
+    <rect x="28" y="35" width="7" height="7"/>
+    <rect x="35" y="35" width="7" height="7"/>
+    <!-- row 6: chin (cols 1-4) -->
+    <rect x="7"  y="42" width="7" height="7"/>
+    <rect x="14" y="42" width="7" height="7"/>
+    <rect x="21" y="42" width="7" height="7"/>
+    <rect x="28" y="42" width="7" height="7"/>
+    <!-- row 7: neck (cols 1-4) -->
+    <rect x="7"  y="49" width="7" height="7"/>
+    <rect x="14" y="49" width="7" height="7"/>
+    <rect x="21" y="49" width="7" height="7"/>
+    <rect x="28" y="49" width="7" height="7"/>
+    <!-- row 8: body (cols 0-5) -->
+    <rect x="0"  y="56" width="7" height="7"/>
+    <rect x="7"  y="56" width="7" height="7"/>
+    <rect x="14" y="56" width="7" height="7"/>
+    <rect x="21" y="56" width="7" height="7"/>
+    <rect x="28" y="56" width="7" height="7"/>
+    <rect x="35" y="56" width="7" height="7"/>
+    <!-- row 9: body lower (cols 0,1,4,5) -->
+    <rect x="0"  y="63" width="7" height="7"/>
+    <rect x="7"  y="63" width="7" height="7"/>
+    <rect x="28" y="63" width="7" height="7"/>
+    <rect x="35" y="63" width="7" height="7"/>
+    <!-- row 10: legs (cols 1,4) -->
+    <rect x="7"  y="70" width="7" height="7"/>
+    <rect x="28" y="70" width="7" height="7"/>
+  </g>
 
-  <!-- tool: get_contact() -->
-  <text y="265"><tspan x="20" class="amber">&#x25CF;  </tspan><tspan class="blue">get_contact</tspan><tspan class="muted">()</tspan></text>
-  <text y="283"><tspan x="36" class="dim">&#x2514;  </tspan><tspan class="muted">email     </tspan><tspan class="blue">yashwanthreddykatipally@gmail.com</tspan></text>
-  <text y="300"><tspan x="36" class="dim">   </tspan><tspan class="muted">linkedin  </tspan><tspan class="blue">yashwanth-katipally</tspan></text>
-  <text y="317"><tspan x="36" class="dim">   </tspan><tspan class="muted">web       </tspan><tspan class="blue">yashwanth.net</tspan></text>
+  <!-- eye highlight pixels (lighter teal) -->
+  <g transform="translate(135,65)" class="m-eye">
+    <rect x="7"  y="28" width="7" height="7"/>
+    <rect x="28" y="28" width="7" height="7"/>
+  </g>
 
-  <!-- final prompt + blinking cursor -->
-  <text y="343"><tspan x="20" class="dim">&#x276F;</tspan></text>
-  <rect x="36" y="329" width="9" height="16" rx="1" fill="#58A6FF" class="blue">
+  <!-- ======================================= -->
+  <!-- LEFT PANEL TEXT                         -->
+  <!-- ======================================= -->
+  <text x="156" y="160" text-anchor="middle" font-size="14" font-weight="bold" class="main">Yashwanth Reddy Katipally</text>
+  <text x="156" y="178" text-anchor="middle" font-size="12" class="muted">AI/ML Engineer  ·  San Jose, CA</text>
+  <text x="156" y="194" text-anchor="middle" font-size="11" class="dim">SJSU  ·  Applied Data Intelligence</text>
+
+  <!-- ======================================= -->
+  <!-- RIGHT PANEL                             -->
+  <!-- ======================================= -->
+
+  <!-- Recent projects header -->
+  <text x="312" y="62" font-size="12" font-weight="bold" class="amber">Recent projects</text>
+
+  <!-- Project entries -->
+  <text y="81"  font-size="12"><tspan x="312" class="amber">doom-coder       </tspan><tspan class="muted">AI coding agent with Doom vibes</tspan></text>
+  <text y="97"  font-size="12"><tspan x="312" class="amber">local-siri       </tspan><tspan class="muted">On-device LLM, zero cloud</tspan></text>
+  <text y="113" font-size="12"><tspan x="312" class="amber">slack-agent      </tspan><tspan class="muted">Notion + Slack + email, one agent</tspan></text>
+  <text y="129" font-size="12"><tspan x="312" class="amber">workforce-agent  </tspan><tspan class="muted">Multi-agent workflow automation</tspan></text>
+  <text x="312" y="147" font-size="12" class="dim">...  github.com/katipally</text>
+
+  <!-- Right panel horizontal divider -->
+  <line x1="297" y1="164" x2="703" y2="164" class="div-amr" stroke-dasharray="4 4"/>
+
+  <!-- Status header -->
+  <text x="312" y="183" font-size="12" font-weight="bold" class="amber">Status</text>
+
+  <!-- OPEN_TO_WORK -->
+  <text y="202" font-size="12">
+    <tspan x="312" class="green">OPEN_TO_WORK=true</tspan><tspan class="dim">  # full-time AI/ML roles</tspan>
+  </text>
+
+  <!-- Contact info -->
+  <text y="219" font-size="12"><tspan x="312" class="muted">email     </tspan><tspan class="blue">yashwanthreddykatipally@gmail.com</tspan></text>
+  <text y="235" font-size="12"><tspan x="312" class="muted">linkedin  </tspan><tspan class="blue">yashwanth-katipally</tspan></text>
+  <text y="251" font-size="12"><tspan x="312" class="muted">web       </tspan><tspan class="blue">yashwanth.net</tspan></text>
+
+  <!-- ======================================= -->
+  <!-- BOTTOM PROMPT AREA                      -->
+  <!-- ======================================= -->
+
+  <!-- Horizontal separator -->
+  <line x1="16" y1="385" x2="704" y2="385" class="sep-line"/>
+
+  <!-- Prompt + blinking cursor -->
+  <text x="20" y="410" font-size="13" class="dim">&gt;</text>
+  <rect x="32" y="396" width="9" height="16" rx="1" fill="#58A6FF" class="blue">
     <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/>
   </rect>
 </svg>
