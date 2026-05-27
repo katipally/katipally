@@ -1,171 +1,90 @@
-<svg width="720" height="440" viewBox="0 0 720 440" xmlns="http://www.w3.org/2000/svg">
+<svg width="760" height="440" viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg">
   <style>
     text { font-family: Menlo, Monaco, 'Courier New', monospace; }
-    .bg       { fill: #0D1117; }
-    .win-bord { fill: none; stroke: #30363D; stroke-width: 1; }
-    .pnl-bord { fill: none; stroke: #D29922; stroke-width: 1.5; }
-    .sep-line { stroke: #30363D; stroke-width: 1; fill: none; }
-    .div-amr  { stroke: #D29922; stroke-width: 1; fill: none; }
-    .main     { fill: #E6EDF3; }
-    .muted    { fill: #8B949E; }
-    .blue     { fill: #58A6FF; }
-    .green    { fill: #3FB950; }
-    .amber    { fill: #D29922; }
-    .dim      { fill: #6E7681; }
-    .mascot   { fill: #45D1DA; }
-    .m-eye    { fill: #C5F5F8; }
+    .bg     { fill: #0D1117; }
+    .tbar   { fill: #161B22; }
+    .bord   { fill: none; stroke: #238636; stroke-width: 1.5; }
+    .sep    { stroke: #238636; stroke-width: 0.8; fill: none; }
+    .main   { fill: #E6EDF3; }
+    .muted  { fill: #8B949E; }
+    .green  { fill: #3FB950; }
+    .bgreen { fill: #39D353; }
+    .blue   { fill: #58A6FF; }
+    .dim    { fill: #6E7681; }
     @media (prefers-color-scheme: light) {
-      .bg       { fill: #FFFFFF; }
-      .win-bord { fill: none; stroke: #D0D7DE; stroke-width: 1; }
-      .pnl-bord { fill: none; stroke: #9A6700; stroke-width: 1.5; }
-      .sep-line { stroke: #D0D7DE; stroke-width: 1; fill: none; }
-      .div-amr  { stroke: #9A6700; stroke-width: 1; fill: none; }
-      .main     { fill: #1F2328; }
-      .muted    { fill: #656D76; }
-      .blue     { fill: #0969DA; }
-      .green    { fill: #1A7F37; }
-      .amber    { fill: #9A6700; }
-      .dim      { fill: #848D97; }
-      .mascot   { fill: #0E7C86; }
-      .m-eye    { fill: #B0DDE0; }
+      .bg     { fill: #FFFFFF; }
+      .tbar   { fill: #F6F8FA; }
+      .bord   { fill: none; stroke: #1F883D; stroke-width: 1.5; }
+      .sep    { stroke: #1F883D; stroke-width: 0.8; fill: none; }
+      .main   { fill: #1F2328; }
+      .muted  { fill: #656D76; }
+      .green  { fill: #1A7F37; }
+      .bgreen { fill: #1F883D; }
+      .blue   { fill: #0969DA; }
+      .dim    { fill: #848D97; }
     }
   </style>
 
-  <!-- Window background + border -->
-  <rect width="720" height="440" rx="10" class="bg"/>
-  <rect x="0.5" y="0.5" width="719" height="439" rx="9.5" class="win-bord"/>
+  <!-- Window background -->
+  <rect width="760" height="440" rx="10" class="bg"/>
+
+  <!-- Title bar: rounded top corners only via path -->
+  <path d="M1,10 Q1,1 10,1 H750 Q759,1 759,10 V41 H1 Z" class="tbar"/>
+
+  <!-- Title bar separator -->
+  <line x1="1" y1="41" x2="759" y2="41" class="sep"/>
+
+  <!-- Window border (drawn on top) -->
+  <rect x="0.5" y="0.5" width="759" height="439" rx="9.5" class="bord"/>
 
   <!-- Traffic lights -->
-  <circle cx="22" cy="18" r="6" fill="#FF5F57"/>
-  <circle cx="42" cy="18" r="6" fill="#FFBD2E"/>
-  <circle cx="62" cy="18" r="6" fill="#28CA41"/>
+  <circle cx="24" cy="21" r="6" fill="#FF5F57"/>
+  <circle cx="46" cy="21" r="6" fill="#FFBD2E"/>
+  <circle cx="68" cy="21" r="6" fill="#28CA41"/>
 
-  <!-- Dashed panel border -->
-  <rect x="16.5" y="42.5" width="687" height="329" rx="4" class="pnl-bord" stroke-dasharray="6 4"/>
+  <!-- Title bar label -->
+  <text x="380" y="26" text-anchor="middle" font-size="12" class="dim">zsh  --  katipally  --  80x24</text>
 
-  <!-- Title "cut" — hides part of top dashed edge -->
-  <rect x="22" y="37" width="200" height="11" class="bg"/>
-  <!-- Title embedded in top border -->
-  <text x="26" y="48" font-size="12">
-    <tspan class="amber">---- </tspan><tspan class="main" font-weight="bold">yashwanth</tspan><tspan class="dim"> v1.0</tspan><tspan class="amber"> ----</tspan>
+  <!-- ======== $ whoami ======== -->
+  <text x="20" y="67" font-size="13">
+    <tspan class="green">yashwanth@sjsu</tspan><tspan class="dim"> ~ </tspan><tspan class="bgreen">%</tspan><tspan class="main"> whoami</tspan>
+  </text>
+  <text y="87" font-size="13">
+    <tspan x="20" class="main">yashwanth  </tspan><tspan class="dim">·  recent grad from SJSU  ·  </tspan><tspan class="green">AI/ML Engineer</tspan>
+  </text>
+  <text x="20" y="105" font-size="12" class="dim"># ships code. ships bugs. usually in that order.</text>
+
+  <!-- ======== $ cat about.txt ======== -->
+  <text x="20" y="131" font-size="13">
+    <tspan class="green">yashwanth@sjsu</tspan><tspan class="dim"> ~ </tspan><tspan class="bgreen">%</tspan><tspan class="main"> cat about.txt</tspan>
+  </text>
+  <text x="20" y="152" font-size="13" class="main">I find gaps in systems, figure out why they exist, and close them.</text>
+  <text x="20" y="171" font-size="13" class="main">Occasionally I'm the one who opened them -- but they always get fixed.</text>
+  <text x="20" y="190" font-size="13" class="muted">Recent grad from SJSU. Building AI/ML that works in the real world.</text>
+
+  <!-- ======== $ echo $OPEN_TO_WORK ======== -->
+  <text x="20" y="216" font-size="13">
+    <tspan class="green">yashwanth@sjsu</tspan><tspan class="dim"> ~ </tspan><tspan class="bgreen">%</tspan><tspan class="main"> echo $OPEN_TO_WORK</tspan>
+  </text>
+  <text y="236" font-size="13">
+    <tspan x="20" class="bgreen">true</tspan><tspan class="dim">  # hire me before someone else does</tspan>
   </text>
 
-  <!-- Left / right panel divider -->
-  <line x1="296" y1="43" x2="296" y2="371" class="div-amr" stroke-dasharray="4 4"/>
-
-  <!-- ======================================= -->
-  <!-- MASCOT: teal pixel-art robot, 6x11 grid, 7px/pixel -->
-  <!-- origin: translate(135, 65) -->
-  <!-- ======================================= -->
-
-  <!-- body pixels -->
-  <g transform="translate(135,65)" class="mascot">
-    <!-- row 0: antenna tip (col 3) -->
-    <rect x="21" y="0"  width="7" height="7"/>
-    <!-- row 1: antenna (col 3) -->
-    <rect x="21" y="7"  width="7" height="7"/>
-    <!-- row 2: head top (cols 1-4) -->
-    <rect x="7"  y="14" width="7" height="7"/>
-    <rect x="14" y="14" width="7" height="7"/>
-    <rect x="21" y="14" width="7" height="7"/>
-    <rect x="28" y="14" width="7" height="7"/>
-    <!-- row 3: full head (cols 0-5) -->
-    <rect x="0"  y="21" width="7" height="7"/>
-    <rect x="7"  y="21" width="7" height="7"/>
-    <rect x="14" y="21" width="7" height="7"/>
-    <rect x="21" y="21" width="7" height="7"/>
-    <rect x="28" y="21" width="7" height="7"/>
-    <rect x="35" y="21" width="7" height="7"/>
-    <!-- row 4: eyes row — body at cols 0,5; gap at 2,3 -->
-    <rect x="0"  y="28" width="7" height="7"/>
-    <rect x="35" y="28" width="7" height="7"/>
-    <!-- row 5: lower face (cols 0-5) -->
-    <rect x="0"  y="35" width="7" height="7"/>
-    <rect x="7"  y="35" width="7" height="7"/>
-    <rect x="14" y="35" width="7" height="7"/>
-    <rect x="21" y="35" width="7" height="7"/>
-    <rect x="28" y="35" width="7" height="7"/>
-    <rect x="35" y="35" width="7" height="7"/>
-    <!-- row 6: chin (cols 1-4) -->
-    <rect x="7"  y="42" width="7" height="7"/>
-    <rect x="14" y="42" width="7" height="7"/>
-    <rect x="21" y="42" width="7" height="7"/>
-    <rect x="28" y="42" width="7" height="7"/>
-    <!-- row 7: neck (cols 1-4) -->
-    <rect x="7"  y="49" width="7" height="7"/>
-    <rect x="14" y="49" width="7" height="7"/>
-    <rect x="21" y="49" width="7" height="7"/>
-    <rect x="28" y="49" width="7" height="7"/>
-    <!-- row 8: body (cols 0-5) -->
-    <rect x="0"  y="56" width="7" height="7"/>
-    <rect x="7"  y="56" width="7" height="7"/>
-    <rect x="14" y="56" width="7" height="7"/>
-    <rect x="21" y="56" width="7" height="7"/>
-    <rect x="28" y="56" width="7" height="7"/>
-    <rect x="35" y="56" width="7" height="7"/>
-    <!-- row 9: body lower (cols 0,1,4,5) -->
-    <rect x="0"  y="63" width="7" height="7"/>
-    <rect x="7"  y="63" width="7" height="7"/>
-    <rect x="28" y="63" width="7" height="7"/>
-    <rect x="35" y="63" width="7" height="7"/>
-    <!-- row 10: legs (cols 1,4) -->
-    <rect x="7"  y="70" width="7" height="7"/>
-    <rect x="28" y="70" width="7" height="7"/>
-  </g>
-
-  <!-- eye highlight pixels (lighter teal) -->
-  <g transform="translate(135,65)" class="m-eye">
-    <rect x="7"  y="28" width="7" height="7"/>
-    <rect x="28" y="28" width="7" height="7"/>
-  </g>
-
-  <!-- ======================================= -->
-  <!-- LEFT PANEL TEXT                         -->
-  <!-- ======================================= -->
-  <text x="156" y="160" text-anchor="middle" font-size="14" font-weight="bold" class="main">Yashwanth Reddy Katipally</text>
-  <text x="156" y="178" text-anchor="middle" font-size="12" class="muted">AI/ML Engineer  ·  San Jose, CA</text>
-  <text x="156" y="194" text-anchor="middle" font-size="11" class="dim">SJSU  ·  Applied Data Intelligence</text>
-
-  <!-- ======================================= -->
-  <!-- RIGHT PANEL                             -->
-  <!-- ======================================= -->
-
-  <!-- Recent projects header -->
-  <text x="312" y="62" font-size="12" font-weight="bold" class="amber">Recent projects</text>
-
-  <!-- Project entries -->
-  <text y="81"  font-size="12"><tspan x="312" class="amber">doom-coder       </tspan><tspan class="muted">AI coding agent with Doom vibes</tspan></text>
-  <text y="97"  font-size="12"><tspan x="312" class="amber">local-siri       </tspan><tspan class="muted">On-device LLM, zero cloud</tspan></text>
-  <text y="113" font-size="12"><tspan x="312" class="amber">slack-agent      </tspan><tspan class="muted">Notion + Slack + email, one agent</tspan></text>
-  <text y="129" font-size="12"><tspan x="312" class="amber">workforce-agent  </tspan><tspan class="muted">Multi-agent workflow automation</tspan></text>
-  <text x="312" y="147" font-size="12" class="dim">...  github.com/katipally</text>
-
-  <!-- Right panel horizontal divider -->
-  <line x1="297" y1="164" x2="703" y2="164" class="div-amr" stroke-dasharray="4 4"/>
-
-  <!-- Status header -->
-  <text x="312" y="183" font-size="12" font-weight="bold" class="amber">Status</text>
-
-  <!-- OPEN_TO_WORK -->
-  <text y="202" font-size="12">
-    <tspan x="312" class="green">OPEN_TO_WORK=true</tspan><tspan class="dim">  # full-time AI/ML roles</tspan>
+  <!-- ======== $ cat contact.txt ======== -->
+  <text x="20" y="262" font-size="13">
+    <tspan class="green">yashwanth@sjsu</tspan><tspan class="dim"> ~ </tspan><tspan class="bgreen">%</tspan><tspan class="main"> cat contact.txt</tspan>
   </text>
+  <text y="282" font-size="13"><tspan x="20" class="muted">email     </tspan><tspan class="blue">yashwanthreddykatipally@gmail.com</tspan></text>
+  <text y="301" font-size="13"><tspan x="20" class="muted">linkedin  </tspan><tspan class="blue">yashwanth-katipally</tspan></text>
+  <text y="320" font-size="13"><tspan x="20" class="muted">web       </tspan><tspan class="blue">yashwanth.net</tspan></text>
 
-  <!-- Contact info -->
-  <text y="219" font-size="12"><tspan x="312" class="muted">email     </tspan><tspan class="blue">yashwanthreddykatipally@gmail.com</tspan></text>
-  <text y="235" font-size="12"><tspan x="312" class="muted">linkedin  </tspan><tspan class="blue">yashwanth-katipally</tspan></text>
-  <text y="251" font-size="12"><tspan x="312" class="muted">web       </tspan><tspan class="blue">yashwanth.net</tspan></text>
-
-  <!-- ======================================= -->
-  <!-- BOTTOM PROMPT AREA                      -->
-  <!-- ======================================= -->
-
-  <!-- Horizontal separator -->
-  <line x1="16" y1="385" x2="704" y2="385" class="sep-line"/>
-
-  <!-- Prompt + blinking cursor -->
-  <text x="20" y="410" font-size="13" class="dim">&gt;</text>
-  <rect x="32" y="396" width="9" height="16" rx="1" fill="#58A6FF" class="blue">
+  <!-- ======== Final prompt + blinking cursor ======== -->
+  <text x="20" y="352" font-size="13">
+    <tspan class="green">yashwanth@sjsu</tspan><tspan class="dim"> ~ </tspan><tspan class="bgreen">% </tspan>
+  </text>
+  <!-- cursor: ~19 chars * 7.8px/char = 148px → x = 20 + 148 = 168 -->
+  <rect x="170" y="338" width="8" height="16" rx="1" fill="#39D353" class="bgreen">
     <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/>
   </rect>
+
 </svg>
