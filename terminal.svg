@@ -52,16 +52,16 @@
   <!-- Title bar address (github url) -->
   <text x="380" y="26" text-anchor="middle" font-size="12" class="dim">github.com/katipally</text>
 
-  <!-- ====== ASCII banner: "Yash" ====== -->
-  <text x="24" y="78"  font-size="16" class="orange" xml:space="preserve">██╗   ██╗ █████╗ ███████╗██╗  ██╗</text>
-  <text x="24" y="96"  font-size="16" class="orange" xml:space="preserve">╚██╗ ██╔╝██╔══██╗██╔════╝██║  ██║</text>
-  <text x="24" y="114" font-size="16" class="orange" xml:space="preserve"> ╚████╔╝ ███████║███████╗███████║</text>
-  <text x="24" y="132" font-size="16" class="orange" xml:space="preserve">  ╚██╔╝  ██╔══██║╚════██║██╔══██║</text>
-  <text x="24" y="150" font-size="16" class="orange" xml:space="preserve">   ██║   ██║  ██║███████║██║  ██║</text>
-  <text x="24" y="168" font-size="16" class="orange" xml:space="preserve">   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝</text>
+  <!-- ====== ASCII banner: "HOWDY!" ====== -->
+  <text x="24" y="78"  font-size="16" class="orange" xml:space="preserve">██╗  ██╗ ██████╗ ██╗    ██╗██████╗ ██╗   ██╗██╗</text>
+  <text x="24" y="96"  font-size="16" class="orange" xml:space="preserve">██║  ██║██╔═══██╗██║    ██║██╔══██╗╚██╗ ██╔╝██║</text>
+  <text x="24" y="114" font-size="16" class="orange" xml:space="preserve">███████║██║   ██║██║ █╗ ██║██║  ██║ ╚████╔╝ ██║</text>
+  <text x="24" y="132" font-size="16" class="orange" xml:space="preserve">██╔══██║██║   ██║██║███╗██║██║  ██║  ╚██╔╝  ╚═╝</text>
+  <text x="24" y="150" font-size="16" class="orange" xml:space="preserve">██║  ██║╚██████╔╝╚███╔███╔╝██████╔╝   ██║   ██╗</text>
+  <text x="24" y="168" font-size="16" class="orange" xml:space="preserve">╚═╝  ╚═╝ ╚═════╝  ╚══╝╚══╝ ╚═════╝    ╚═╝   ╚═╝</text>
 
   <!-- Tagline (greets the visitor) -->
-  <text x="24" y="194" font-size="13" xml:space="preserve"><tspan class="orange">&#x273B;</tspan><tspan class="main"> oh hey, a visitor</tspan><tspan class="dim">  &#xB7;  lemme tell you who you're dealing with</tspan></text>
+  <text x="24" y="194" font-size="13" xml:space="preserve"><tspan class="orange">&#x273B;</tspan><tspan class="main"> oh hey, a visitor </tspan><tspan class="amber">\o/</tspan><tspan class="dim">   lemme tell you who you're dealing with</tspan></text>
 
   <!-- Separator below banner -->
   <line x1="24" y1="208" x2="736" y2="208" class="sepl"/>
