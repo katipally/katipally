@@ -24,16 +24,16 @@
 
   <br/><br/>
 
-  <!-- ====== contact ====== -->
-  <a href="mailto:yashwanthreddykatipally@gmail.com">
-    <img src="https://img.shields.io/badge/email-EA4335?style=flat-square&logo=gmail&logoColor=white" />
+  <!-- ====== contact (themed, clickable) ====== -->
+  <a href="mailto:yashwanthreddykatipally@gmail.com" title="email me">
+    <img src="https://img.shields.io/badge/_EMAIL-1C1C1C?style=for-the-badge&logo=gmail&logoColor=D77757&labelColor=1C1C1C" height="30" />
   </a>
   &nbsp;
-  <a href="https://linkedin.com/in/yashwanth-katipally">
-    <img src="https://img.shields.io/badge/linkedin-0A66C2?style=flat-square&logo=linkedin&logoColor=white" />
+  <a href="https://linkedin.com/in/yashwanth-katipally" title="connect on linkedin">
+    <img src="https://img.shields.io/badge/_LINKEDIN-1C1C1C?style=for-the-badge&logo=linkedin&logoColor=D77757&labelColor=1C1C1C" height="30" />
   </a>
   &nbsp;
-  <a href="https://yashwanth.net">
-    <img src="https://img.shields.io/badge/yashwanth.net-1E1E2E?style=flat-square&logo=safari&logoColor=89DCEB" />
+  <a href="https://yashwanth.net" title="visit my site">
+    <img src="https://img.shields.io/badge/_YASHWANTH.NET-1C1C1C?style=for-the-badge&logo=safari&logoColor=D77757&labelColor=1C1C1C" height="30" />
   </a>
 </div>
