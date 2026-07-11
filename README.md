@@ -1,22 +1,20 @@
 <div align="center">
   <img src="./terminal.svg" width="720" />
 
-  <br/><br/>
+  <br/>
 
   <!-- ====== contact cards (clickable terminal cards) ====== -->
   <a href="mailto:yashwanthreddykatipally@gmail.com" title="email me">
     <img src="./contact-email.svg" width="340" />
   </a>
-  <br/>
   <a href="https://linkedin.com/in/yashwanth-katipally" title="connect on linkedin">
     <img src="./contact-linkedin.svg" width="340" />
   </a>
-  <br/>
   <a href="https://yashwanth.net" title="visit my site">
     <img src="./contact-web.svg" width="340" />
   </a>
 
-  <br/><br/>
+  <br/>
 
   <!-- ====== galaga contribution graph ====== -->
   <picture>
